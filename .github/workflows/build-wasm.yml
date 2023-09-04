@@ -24,7 +24,7 @@ jobs:
     runs-on: GP1-M
     name: Build WASM
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Install Docker
       run: apt update -y && snap install docker
