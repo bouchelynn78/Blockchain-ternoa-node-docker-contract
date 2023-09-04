@@ -15,7 +15,7 @@ jobs:
     runs-on: GP1-M
     name: Build Ubuntu 2204 Binary
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: "Build DockerImage"
       run: podman build -t tchain -f ./dockerimages/ubuntu-2204.Dockerfile .
